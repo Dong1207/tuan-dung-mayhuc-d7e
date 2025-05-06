@@ -1,0 +1,72 @@
+#root {
+  margin: 0 auto;
+}
+
+.chapter-content {
+  padding: 0 1.5rem;
+}
+
+.chapter-content h1 {
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.content {
+  max-width: calc(100% - 1rem);
+  min-width: 51%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.content p {
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+.content h2,
+.content h3 {
+  color: #0066cc;
+  margin: 1.5rem 0 1rem;
+}
+
+.content ul,
+.content ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

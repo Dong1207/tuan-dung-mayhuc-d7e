@@ -1,0 +1,227 @@
+.thu-vien {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.thu-vien h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #f5f5f5;
+}
+
+.tab.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.content {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.path-navigation {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #e9ecef;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.file-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.file-card {
+  width: 250px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.file-card:hover {
+  transform: translateY(-5px);
+}
+
+.file-card.directory {
+  background-color: #f8f9fa;
+}
+
+.file-preview {
+  height: 200px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.file-preview img,
+.file-preview video {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.folder-icon,
+.pdf-icon,
+.unknown-icon {
+  font-size: 48px;
+  color: #666;
+}
+
+.file-info {
+  padding: 15px;
+}
+
+.file-name {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-size {
+  color: #666;
+  font-size: 14px;
+}
+
+.preview-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.preview-content {
+  background: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 1000px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preview-header h3 {
+  margin: 0;
+  color: #333;
+}
+
+.preview-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.preview-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.preview-actions button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.preview-actions button:first-child:hover {
+  background-color: #0056b3;
+}
+
+.preview-actions button:last-child {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.preview-actions button:last-child:hover {
+  background-color: #e9ecef;
+}
+
+.preview-body {
+  padding: 20px;
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-body img,
+.preview-body video,
+.preview-body iframe {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+}
