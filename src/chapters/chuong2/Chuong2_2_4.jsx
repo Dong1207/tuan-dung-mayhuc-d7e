@@ -67,6 +67,7 @@ const Chuong2_2_4 = () => {
                 <td key={j} style={{ padding: 12, textAlign: 'center', fontSize: 16 }}>
                   <div>{item.label}</div>
                   <button
+                    className="primary"
                     onClick={() => openModal(videoBase41 + item.file)}
                     style={{ marginTop: 8, padding: '6px 18px', fontSize: 15 }}
                   >
@@ -94,6 +95,7 @@ const Chuong2_2_4 = () => {
                 <td key={j} style={{ padding: 12, textAlign: 'center', fontSize: 16 }}>
                   <div>{item.label}</div>
                   <button
+                    className="primary"
                     onClick={() => openModal(videoBase42 + item.file)}
                     style={{ marginTop: 8, padding: '6px 18px', fontSize: 15 }}
                   >

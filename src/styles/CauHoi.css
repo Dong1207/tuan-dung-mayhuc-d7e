@@ -111,9 +111,15 @@
 .navigation button:not(:last-child) {
   margin-right: 4px;
 }
-.navigation button.primary {
-  background: #2563eb;
-  color: #fff;
+.navigation button.primary, .primary {
+  background: #f3f4f6;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+}
+.navigation button.primary:active, .primary:active {
+  background: #e5e7eb;
 }
 .navigation button.secondary {
   background: #f3f4f6;
